@@ -1,1 +1,27 @@
 # TaipeiZoo
+
+MainViewController：
+此為主頁面，內含containerView與topBarView。 
+containerView所連結的是SpeciesPageViewController，提供動物與植物瀏覽。
+topBarView包含searchBar與button，提供使用者搜尋與切換頁面。
+
+BaseCollectionViewController：
+內含基本的API參數定義、cellID、與reuseful的function。
+
+SpeciesPageViewController：
+提供兩頁供使用者瀏覽，動物與植物。
+
+SpeciesCollectionViewController：
+為SpeciesPageViewController的子頁，物種資料實現自動加載直至達到物種最大總數，圖片採用async下載處理，並透過delegate回傳。
+
+DetailCollectionViewController：
+Section 0負責呈現所選擇物種的圖片與詳細資料；Section 1提供自動加載其他物種。
+
+DetailPhotoPageViewController：
+為DetailCollectionViewController裡的圖片PageViewController。
+
+FrameViewController：
+為DetailPhotoPageViewController裡的Page，圖片採用async下載處理，並透過delegate回傳。
+
+FavoriteViewController：
+內容呈現使用者已經加入收藏的物種，物種資料儲存方式為CoreData。
