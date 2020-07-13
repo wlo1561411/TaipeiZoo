@@ -444,7 +444,7 @@ extension SpeciesCollectionViewController: ImageDownloadDelegate {
 
         var row: Int?
 
-//      If user is searching, will need to find same species first.
+        // If user is searching, will need to find same species first.
         if isSearch {
 
             let originImgTask = isAnimal ? animals[indexRow].imgTasks.first : plants[indexRow].imgTasks.first

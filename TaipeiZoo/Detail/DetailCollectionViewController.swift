@@ -12,7 +12,7 @@ import UIKit
  Presnt the species image and details on section 0,
  and fetch other species on section 1.
  */
-class DetailViewController: BaseCollectionViewController {
+class DetailCollectionViewController: BaseCollectionViewController {
     
     private let horiValue: CGFloat = 17  // Left & Right constraint
     private let vertValue: CGFloat = 15  // Top & Bottom constraint
@@ -330,7 +330,7 @@ class DetailViewController: BaseCollectionViewController {
 
 // MARK: - Web Service
 
-extension DetailViewController {
+extension DetailCollectionViewController {
     
     fileprivate func fetchMoreSpecies() {
         
@@ -355,7 +355,7 @@ extension DetailViewController {
  section 0 = selected species detail
  section 1 = fetch other species
  */
-extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension DetailCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -491,7 +491,7 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
  section 0 = selected species detail
  section 1 = fetch other species
  */
-extension DetailViewController: UICollectionViewDelegateFlowLayout {
+extension DetailCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
@@ -593,7 +593,7 @@ extension DetailViewController: UICollectionViewDelegateFlowLayout {
 
 // MARK: - Scroll Delegate
 
-extension DetailViewController {
+extension DetailCollectionViewController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
@@ -615,7 +615,7 @@ extension DetailViewController {
 
 // MARK: - Image Download Delegate
 
-extension DetailViewController: ImageDownloadDelegate {
+extension DetailCollectionViewController: ImageDownloadDelegate {
     
     // While image download finish, imageTask will call this delegate function for reload cell.
     func updateLoadedImg(indexRow: Int) {

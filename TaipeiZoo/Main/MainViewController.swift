@@ -187,7 +187,7 @@ class MainViewController: UIViewController {
         
         if segue.identifier == detailSegueId {
             
-            if let dvc     = segue.destination as? DetailViewController,
+            if let dvc     = segue.destination as? DetailCollectionViewController,
                let species = sender as? Species,
                let okNum   = species.number {
                 

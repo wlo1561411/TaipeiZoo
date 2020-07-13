@@ -10,7 +10,7 @@
 		CE026ECC24A32E0B00F3AE61 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE026ECB24A32E0B00F3AE61 /* BaseCollectionViewController.swift */; };
 		CE1902332485DC5C00F9CAC6 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1902322485DC5C00F9CAC6 /* Species.swift */; };
 		CE1902352485E34A00F9CAC6 /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1902342485E34A00F9CAC6 /* VerticalAlignLabel.swift */; };
-		CE19023C2486247000F9CAC6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19023B2486247000F9CAC6 /* DetailViewController.swift */; };
+		CE19023C2486247000F9CAC6 /* DetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19023B2486247000F9CAC6 /* DetailCollectionViewController.swift */; };
 		CE63A928247E008200815061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A927247E008200815061 /* AppDelegate.swift */; };
 		CE63A92F247E008200815061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63A92D247E008200815061 /* Main.storyboard */; };
 		CE63A932247E008200815061 /* TaipeiZoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE63A930247E008200815061 /* TaipeiZoo.xcdatamodeld */; };
@@ -63,7 +63,7 @@
 		CE026ECB24A32E0B00F3AE61 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 		CE1902322485DC5C00F9CAC6 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
 		CE1902342485E34A00F9CAC6 /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
-		CE19023B2486247000F9CAC6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE19023B2486247000F9CAC6 /* DetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCollectionViewController.swift; sourceTree = "<group>"; };
 		CE63A924247E008200815061 /* TaipeiZoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiZoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE63A927247E008200815061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE63A92E247E008200815061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -271,7 +271,7 @@
 		CED2B85124876E7500CD1785 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				CE19023B2486247000F9CAC6 /* DetailViewController.swift */,
+				CE19023B2486247000F9CAC6 /* DetailCollectionViewController.swift */,
 				CE63A95C247E00B400815061 /* DetailPhotoPageViewController.swift */,
 				CEB5B38224AD8141009DB5C4 /* FrameViewController.swift */,
 			);
@@ -439,7 +439,7 @@
 				CE63A96B247E03DA00815061 /* SpeciesCollectionViewCell.swift in Sources */,
 				CEB5B38324AD8141009DB5C4 /* FrameViewController.swift in Sources */,
 				CE63A965247E00B400815061 /* MainViewController.swift in Sources */,
-				CE19023C2486247000F9CAC6 /* DetailViewController.swift in Sources */,
+				CE19023C2486247000F9CAC6 /* DetailCollectionViewController.swift in Sources */,
 				CEEBCA9B248777FE0000FDFC /* SpeciesCollectionViewController.swift in Sources */,
 				CE63A961247E00B400815061 /* Plant.swift in Sources */,
 				CEA62B3C24A04DC4003161DD /* NetworkHandler.swift in Sources */,
