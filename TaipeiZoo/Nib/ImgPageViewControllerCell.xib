@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pageViewCell" id="YOv-NJ-teL" customClass="ImagePageViewControllerCell" customModule="TaipeiZoo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="huy-gu-Yt3">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-w0-73E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="300" id="0sL-SP-0Xn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="大貓熊" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOL-I7-mok">
+                        <rect key="frame" x="17" y="315" width="380" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giant Panda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7k-iN-6lF">
+                        <rect key="frame" x="17" y="348.5" width="380" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ailuropoda melanoleuca" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTa-qc-mLk">
+                        <rect key="frame" x="17" y="377" width="380" height="19.5"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="新光特展區(大貓熊館)" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQV-sv-XZS">
+                        <rect key="frame" x="17" y="406.5" width="380" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="kQV-sv-XZS" firstAttribute="leading" secondItem="huy-gu-Yt3" secondAttribute="leading" constant="17" id="4xB-Ql-CoC"/>
+                    <constraint firstItem="EOL-I7-mok" firstAttribute="leading" secondItem="huy-gu-Yt3" secondAttribute="leading" constant="17" id="A2B-9a-eVA"/>
+                    <constraint firstItem="EOL-I7-mok" firstAttribute="top" secondItem="eRS-w0-73E" secondAttribute="bottom" constant="15" id="GDP-Za-e3W"/>
+                    <constraint firstItem="NTa-qc-mLk" firstAttribute="top" secondItem="A7k-iN-6lF" secondAttribute="bottom" constant="7" id="HSo-zl-ehS"/>
+                    <constraint firstAttribute="trailing" secondItem="eRS-w0-73E" secondAttribute="trailing" id="OSt-xP-yje"/>
+                    <constraint firstAttribute="trailing" secondItem="A7k-iN-6lF" secondAttribute="trailing" constant="17" id="QiF-Lr-AgG"/>
+                    <constraint firstAttribute="trailing" secondItem="NTa-qc-mLk" secondAttribute="trailing" constant="17" id="QpM-ex-0d3"/>
+                    <constraint firstItem="eRS-w0-73E" firstAttribute="top" secondItem="huy-gu-Yt3" secondAttribute="top" id="Wpu-I3-ax1"/>
+                    <constraint firstAttribute="trailing" secondItem="EOL-I7-mok" secondAttribute="trailing" constant="17" id="ZcH-lb-nOS"/>
+                    <constraint firstItem="NTa-qc-mLk" firstAttribute="leading" secondItem="huy-gu-Yt3" secondAttribute="leading" constant="17" id="cpk-Ur-doV"/>
+                    <constraint firstItem="eRS-w0-73E" firstAttribute="width" secondItem="huy-gu-Yt3" secondAttribute="width" id="hrq-bx-QLP"/>
+                    <constraint firstItem="A7k-iN-6lF" firstAttribute="top" secondItem="EOL-I7-mok" secondAttribute="bottom" constant="7" id="lcu-fv-0Y7"/>
+                    <constraint firstItem="eRS-w0-73E" firstAttribute="leading" secondItem="huy-gu-Yt3" secondAttribute="leading" id="neh-yV-naA"/>
+                    <constraint firstItem="A7k-iN-6lF" firstAttribute="leading" secondItem="huy-gu-Yt3" secondAttribute="leading" constant="17" id="v61-yR-Ng9"/>
+                    <constraint firstItem="kQV-sv-XZS" firstAttribute="top" secondItem="NTa-qc-mLk" secondAttribute="bottom" constant="10" id="vZm-gl-QPz"/>
+                    <constraint firstAttribute="trailing" secondItem="kQV-sv-XZS" secondAttribute="trailing" constant="17" id="ztu-kN-KFc"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="397" height="387"/>
+            <connections>
+                <outlet property="chNameLabel" destination="EOL-I7-mok" id="dFd-7t-bEJ"/>
+                <outlet property="containerV" destination="eRS-w0-73E" id="sPQ-tc-xJz"/>
+                <outlet property="enNameLabel" destination="A7k-iN-6lF" id="Yfg-wM-AOw"/>
+                <outlet property="laNameLabel" destination="NTa-qc-mLk" id="3o7-B5-gWk"/>
+                <outlet property="locationLabel" destination="kQV-sv-XZS" id="abp-gm-7sh"/>
+            </connections>
+            <point key="canvasLocation" x="-297.10144927536237" y="-64.955357142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>

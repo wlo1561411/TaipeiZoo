@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE026ECC24A32E0B00F3AE61 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE026ECB24A32E0B00F3AE61 /* BaseCollectionViewController.swift */; };
+		CE1902332485DC5C00F9CAC6 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1902322485DC5C00F9CAC6 /* Species.swift */; };
+		CE1902352485E34A00F9CAC6 /* VerticalAlignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1902342485E34A00F9CAC6 /* VerticalAlignLabel.swift */; };
+		CE19023C2486247000F9CAC6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19023B2486247000F9CAC6 /* DetailViewController.swift */; };
+		CE63A928247E008200815061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A927247E008200815061 /* AppDelegate.swift */; };
+		CE63A92F247E008200815061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63A92D247E008200815061 /* Main.storyboard */; };
+		CE63A932247E008200815061 /* TaipeiZoo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE63A930247E008200815061 /* TaipeiZoo.xcdatamodeld */; };
+		CE63A934247E008700815061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE63A933247E008700815061 /* Assets.xcassets */; };
+		CE63A937247E008700815061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63A935247E008700815061 /* LaunchScreen.storyboard */; };
+		CE63A942247E008700815061 /* TaipeiZooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A941247E008700815061 /* TaipeiZooTests.swift */; };
+		CE63A94D247E008700815061 /* TaipeiZooUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A94C247E008700815061 /* TaipeiZooUITests.swift */; };
+		CE63A961247E00B400815061 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A95A247E00B400815061 /* Plant.swift */; };
+		CE63A963247E00B400815061 /* DetailPhotoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A95C247E00B400815061 /* DetailPhotoPageViewController.swift */; };
+		CE63A964247E00B400815061 /* ImageDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A95D247E00B400815061 /* ImageDownloadTask.swift */; };
+		CE63A965247E00B400815061 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A95E247E00B400815061 /* MainViewController.swift */; };
+		CE63A966247E00B400815061 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A95F247E00B400815061 /* Animal.swift */; };
+		CE63A967247E00B400815061 /* BaseWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A960247E00B400815061 /* BaseWebService.swift */; };
+		CE63A96B247E03DA00815061 /* SpeciesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A96A247E03DA00815061 /* SpeciesCollectionViewCell.swift */; };
+		CE63A96D247E044800815061 /* SpeciesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE63A96C247E044800815061 /* SpeciesCollectionViewCell.xib */; };
+		CE63A971247E167000815061 /* ImgPageViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE63A970247E167000815061 /* ImgPageViewControllerCell.xib */; };
+		CE63A973247E17CC00815061 /* ImagePageViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63A972247E17CC00815061 /* ImagePageViewControllerCell.swift */; };
+		CEA1A252247E4EF3003A736A /* TaxonomyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA1A250247E4EF3003A736A /* TaxonomyCollectionViewCell.swift */; };
+		CEA1A253247E4EF3003A736A /* TaxonomyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA1A251247E4EF3003A736A /* TaxonomyCollectionViewCell.xib */; };
+		CEA62B30249DD9FE003161DD /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA62B2F249DD9FE003161DD /* CoreDataHandler.swift */; };
+		CEA62B32249DDA05003161DD /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA62B31249DDA05003161DD /* FavoriteViewController.swift */; };
+		CEA62B3A249DF3D9003161DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA62B39249DF3D9003161DD /* Reachability.m */; };
+		CEA62B3C24A04DC4003161DD /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA62B3B24A04DC4003161DD /* NetworkHandler.swift */; };
+		CEB5B38324AD8141009DB5C4 /* FrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5B38224AD8141009DB5C4 /* FrameViewController.swift */; };
+		CEC8793E247F832400170725 /* DescriptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC8793D247F832400170725 /* DescriptionCollectionViewCell.xib */; };
+		CEC87940247F834F00170725 /* DescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8793F247F834F00170725 /* DescriptionCollectionViewCell.swift */; };
+		CED6E0DA248880610026BD4D /* SpeciesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6E0D9248880610026BD4D /* SpeciesPageViewController.swift */; };
+		CED6E0DC2488EF360026BD4D /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6E0DB2488EF360026BD4D /* TopBarView.swift */; };
+		CEEBCA9B248777FE0000FDFC /* SpeciesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEBCA9A248777FE0000FDFC /* SpeciesCollectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE63A93E247E008700815061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE63A91C247E008200815061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE63A923247E008200815061;
+			remoteInfo = TaipeiZoo;
+		};
+		CE63A949247E008700815061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE63A91C247E008200815061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE63A923247E008200815061;
+			remoteInfo = TaipeiZoo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE026ECB24A32E0B00F3AE61 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		CE1902322485DC5C00F9CAC6 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		CE1902342485E34A00F9CAC6 /* VerticalAlignLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignLabel.swift; sourceTree = "<group>"; };
+		CE19023B2486247000F9CAC6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE63A924247E008200815061 /* TaipeiZoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaipeiZoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE63A927247E008200815061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE63A92E247E008200815061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE63A931247E008200815061 /* TaipeiZoo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaipeiZoo.xcdatamodel; sourceTree = "<group>"; };
+		CE63A933247E008700815061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE63A936247E008700815061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE63A938247E008700815061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE63A93D247E008700815061 /* TaipeiZooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaipeiZooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE63A941247E008700815061 /* TaipeiZooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiZooTests.swift; sourceTree = "<group>"; };
+		CE63A943247E008700815061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE63A948247E008700815061 /* TaipeiZooUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaipeiZooUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE63A94C247E008700815061 /* TaipeiZooUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiZooUITests.swift; sourceTree = "<group>"; };
+		CE63A94E247E008700815061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE63A95A247E00B400815061 /* Plant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		CE63A95C247E00B400815061 /* DetailPhotoPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPhotoPageViewController.swift; sourceTree = "<group>"; };
+		CE63A95D247E00B400815061 /* ImageDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadTask.swift; sourceTree = "<group>"; };
+		CE63A95E247E00B400815061 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE63A95F247E00B400815061 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		CE63A960247E00B400815061 /* BaseWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebService.swift; sourceTree = "<group>"; };
+		CE63A96A247E03DA00815061 /* SpeciesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE63A96C247E044800815061 /* SpeciesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpeciesCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE63A970247E167000815061 /* ImgPageViewControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImgPageViewControllerCell.xib; sourceTree = "<group>"; };
+		CE63A972247E17CC00815061 /* ImagePageViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageViewControllerCell.swift; sourceTree = "<group>"; };
+		CEA1A250247E4EF3003A736A /* TaxonomyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxonomyCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEA1A251247E4EF3003A736A /* TaxonomyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaxonomyCollectionViewCell.xib; sourceTree = "<group>"; };
+		CEA62B2F249DD9FE003161DD /* CoreDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		CEA62B31249DDA05003161DD /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		CEA62B33249DE9A2003161DD /* TaipeiZoo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TaipeiZoo-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEA62B38249DF3D8003161DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		CEA62B39249DF3D9003161DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		CEA62B3B24A04DC4003161DD /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		CEB5B38224AD8141009DB5C4 /* FrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameViewController.swift; sourceTree = "<group>"; };
+		CEC8793D247F832400170725 /* DescriptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCollectionViewCell.xib; sourceTree = "<group>"; };
+		CEC8793F247F834F00170725 /* DescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		CED6E0D9248880610026BD4D /* SpeciesPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesPageViewController.swift; sourceTree = "<group>"; };
+		CED6E0DB2488EF360026BD4D /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		CEEBCA9A248777FE0000FDFC /* SpeciesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesCollectionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE63A921247E008200815061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE63A93A247E008700815061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE63A945247E008700815061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE026ECD24A3311A00F3AE61 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE026ECB24A32E0B00F3AE61 /* BaseCollectionViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE026ECE24A3312300F3AE61 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				CEA62B31249DDA05003161DD /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		CE1902362485E36300F9CAC6 /* Custom Class */ = {
+			isa = PBXGroup;
+			children = (
+				CED6E0DB2488EF360026BD4D /* TopBarView.swift */,
+				CE1902342485E34A00F9CAC6 /* VerticalAlignLabel.swift */,
+				CEA62B2F249DD9FE003161DD /* CoreDataHandler.swift */,
+			);
+			path = "Custom Class";
+			sourceTree = "<group>";
+		};
+		CE63A91B247E008200815061 = {
+			isa = PBXGroup;
+			children = (
+				CE63A926247E008200815061 /* TaipeiZoo */,
+				CE63A940247E008700815061 /* TaipeiZooTests */,
+				CE63A94B247E008700815061 /* TaipeiZooUITests */,
+				CE63A925247E008200815061 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE63A925247E008200815061 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A924247E008200815061 /* TaipeiZoo.app */,
+				CE63A93D247E008700815061 /* TaipeiZooTests.xctest */,
+				CE63A948247E008700815061 /* TaipeiZooUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE63A926247E008200815061 /* TaipeiZoo */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A927247E008200815061 /* AppDelegate.swift */,
+				CEE881F52498B45C009C3C99 /* Main */,
+				CE026ECD24A3311A00F3AE61 /* Base */,
+				CEE881F42498B408009C3C99 /* Species */,
+				CED2B85124876E7500CD1785 /* Detail */,
+				CE026ECE24A3312300F3AE61 /* Favorite */,
+				CE63A968247E033200815061 /* Model */,
+				CE63A969247E039300815061 /* WebService */,
+				CE1902362485E36300F9CAC6 /* Custom Class */,
+				CE63A96F247E13DC00815061 /* Cells */,
+				CE63A96E247E130700815061 /* Nib */,
+				CE63A933247E008700815061 /* Assets.xcassets */,
+				CE63A92D247E008200815061 /* Main.storyboard */,
+				CE63A935247E008700815061 /* LaunchScreen.storyboard */,
+				CE63A938247E008700815061 /* Info.plist */,
+				CE63A930247E008200815061 /* TaipeiZoo.xcdatamodeld */,
+				CEA62B33249DE9A2003161DD /* TaipeiZoo-Bridging-Header.h */,
+			);
+			path = TaipeiZoo;
+			sourceTree = "<group>";
+		};
+		CE63A940247E008700815061 /* TaipeiZooTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A941247E008700815061 /* TaipeiZooTests.swift */,
+				CE63A943247E008700815061 /* Info.plist */,
+			);
+			path = TaipeiZooTests;
+			sourceTree = "<group>";
+		};
+		CE63A94B247E008700815061 /* TaipeiZooUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A94C247E008700815061 /* TaipeiZooUITests.swift */,
+				CE63A94E247E008700815061 /* Info.plist */,
+			);
+			path = TaipeiZooUITests;
+			sourceTree = "<group>";
+		};
+		CE63A968247E033200815061 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE1902322485DC5C00F9CAC6 /* Species.swift */,
+				CE63A95F247E00B400815061 /* Animal.swift */,
+				CE63A95A247E00B400815061 /* Plant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE63A969247E039300815061 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A960247E00B400815061 /* BaseWebService.swift */,
+				CE63A95D247E00B400815061 /* ImageDownloadTask.swift */,
+				CEA62B37249DEA54003161DD /* Reachability */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		CE63A96E247E130700815061 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A96C247E044800815061 /* SpeciesCollectionViewCell.xib */,
+				CE63A970247E167000815061 /* ImgPageViewControllerCell.xib */,
+				CEA1A251247E4EF3003A736A /* TaxonomyCollectionViewCell.xib */,
+				CEC8793D247F832400170725 /* DescriptionCollectionViewCell.xib */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		CE63A96F247E13DC00815061 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A96A247E03DA00815061 /* SpeciesCollectionViewCell.swift */,
+				CE63A972247E17CC00815061 /* ImagePageViewControllerCell.swift */,
+				CEA1A250247E4EF3003A736A /* TaxonomyCollectionViewCell.swift */,
+				CEC8793F247F834F00170725 /* DescriptionCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CEA62B37249DEA54003161DD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CEA62B3B24A04DC4003161DD /* NetworkHandler.swift */,
+				CEA62B38249DF3D8003161DD /* Reachability.h */,
+				CEA62B39249DF3D9003161DD /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		CED2B85124876E7500CD1785 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CE19023B2486247000F9CAC6 /* DetailViewController.swift */,
+				CE63A95C247E00B400815061 /* DetailPhotoPageViewController.swift */,
+				CEB5B38224AD8141009DB5C4 /* FrameViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CEE881F42498B408009C3C99 /* Species */ = {
+			isa = PBXGroup;
+			children = (
+				CED6E0D9248880610026BD4D /* SpeciesPageViewController.swift */,
+				CEEBCA9A248777FE0000FDFC /* SpeciesCollectionViewController.swift */,
+			);
+			path = Species;
+			sourceTree = "<group>";
+		};
+		CEE881F52498B45C009C3C99 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CE63A95E247E00B400815061 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE63A923247E008200815061 /* TaipeiZoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE63A951247E008700815061 /* Build configuration list for PBXNativeTarget "TaipeiZoo" */;
+			buildPhases = (
+				CE63A920247E008200815061 /* Sources */,
+				CE63A921247E008200815061 /* Frameworks */,
+				CE63A922247E008200815061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaipeiZoo;
+			productName = TaipeiZoo;
+			productReference = CE63A924247E008200815061 /* TaipeiZoo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE63A93C247E008700815061 /* TaipeiZooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE63A954247E008700815061 /* Build configuration list for PBXNativeTarget "TaipeiZooTests" */;
+			buildPhases = (
+				CE63A939247E008700815061 /* Sources */,
+				CE63A93A247E008700815061 /* Frameworks */,
+				CE63A93B247E008700815061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE63A93F247E008700815061 /* PBXTargetDependency */,
+			);
+			name = TaipeiZooTests;
+			productName = TaipeiZooTests;
+			productReference = CE63A93D247E008700815061 /* TaipeiZooTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE63A947247E008700815061 /* TaipeiZooUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE63A957247E008700815061 /* Build configuration list for PBXNativeTarget "TaipeiZooUITests" */;
+			buildPhases = (
+				CE63A944247E008700815061 /* Sources */,
+				CE63A945247E008700815061 /* Frameworks */,
+				CE63A946247E008700815061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE63A94A247E008700815061 /* PBXTargetDependency */,
+			);
+			name = TaipeiZooUITests;
+			productName = TaipeiZooUITests;
+			productReference = CE63A948247E008700815061 /* TaipeiZooUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE63A91C247E008200815061 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Finn;
+				TargetAttributes = {
+					CE63A923247E008200815061 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					CE63A93C247E008700815061 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = CE63A923247E008200815061;
+					};
+					CE63A947247E008700815061 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = CE63A923247E008200815061;
+					};
+				};
+			};
+			buildConfigurationList = CE63A91F247E008200815061 /* Build configuration list for PBXProject "TaipeiZoo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE63A91B247E008200815061;
+			productRefGroup = CE63A925247E008200815061 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE63A923247E008200815061 /* TaipeiZoo */,
+				CE63A93C247E008700815061 /* TaipeiZooTests */,
+				CE63A947247E008700815061 /* TaipeiZooUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE63A922247E008200815061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE63A971247E167000815061 /* ImgPageViewControllerCell.xib in Resources */,
+				CE63A96D247E044800815061 /* SpeciesCollectionViewCell.xib in Resources */,
+				CE63A937247E008700815061 /* LaunchScreen.storyboard in Resources */,
+				CEA1A253247E4EF3003A736A /* TaxonomyCollectionViewCell.xib in Resources */,
+				CE63A934247E008700815061 /* Assets.xcassets in Resources */,
+				CE63A92F247E008200815061 /* Main.storyboard in Resources */,
+				CEC8793E247F832400170725 /* DescriptionCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE63A93B247E008700815061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE63A946247E008700815061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE63A920247E008200815061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE63A967247E00B400815061 /* BaseWebService.swift in Sources */,
+				CE63A964247E00B400815061 /* ImageDownloadTask.swift in Sources */,
+				CE63A928247E008200815061 /* AppDelegate.swift in Sources */,
+				CE026ECC24A32E0B00F3AE61 /* BaseCollectionViewController.swift in Sources */,
+				CE63A963247E00B400815061 /* DetailPhotoPageViewController.swift in Sources */,
+				CE63A96B247E03DA00815061 /* SpeciesCollectionViewCell.swift in Sources */,
+				CEB5B38324AD8141009DB5C4 /* FrameViewController.swift in Sources */,
+				CE63A965247E00B400815061 /* MainViewController.swift in Sources */,
+				CE19023C2486247000F9CAC6 /* DetailViewController.swift in Sources */,
+				CEEBCA9B248777FE0000FDFC /* SpeciesCollectionViewController.swift in Sources */,
+				CE63A961247E00B400815061 /* Plant.swift in Sources */,
+				CEA62B3C24A04DC4003161DD /* NetworkHandler.swift in Sources */,
+				CE63A973247E17CC00815061 /* ImagePageViewControllerCell.swift in Sources */,
+				CEA62B3A249DF3D9003161DD /* Reachability.m in Sources */,
+				CED6E0DC2488EF360026BD4D /* TopBarView.swift in Sources */,
+				CE1902332485DC5C00F9CAC6 /* Species.swift in Sources */,
+				CE1902352485E34A00F9CAC6 /* VerticalAlignLabel.swift in Sources */,
+				CEA62B30249DD9FE003161DD /* CoreDataHandler.swift in Sources */,
+				CEA62B32249DDA05003161DD /* FavoriteViewController.swift in Sources */,
+				CEC87940247F834F00170725 /* DescriptionCollectionViewCell.swift in Sources */,
+				CED6E0DA248880610026BD4D /* SpeciesPageViewController.swift in Sources */,
+				CE63A932247E008200815061 /* TaipeiZoo.xcdatamodeld in Sources */,
+				CE63A966247E00B400815061 /* Animal.swift in Sources */,
+				CEA1A252247E4EF3003A736A /* TaxonomyCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE63A939247E008700815061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE63A942247E008700815061 /* TaipeiZooTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE63A944247E008700815061 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE63A94D247E008700815061 /* TaipeiZooUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE63A93F247E008700815061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE63A923247E008200815061 /* TaipeiZoo */;
+			targetProxy = CE63A93E247E008700815061 /* PBXContainerItemProxy */;
+		};
+		CE63A94A247E008700815061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE63A923247E008200815061 /* TaipeiZoo */;
+			targetProxy = CE63A949247E008700815061 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE63A92D247E008200815061 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE63A92E247E008200815061 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE63A935247E008700815061 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE63A936247E008700815061 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE63A94F247E008700815061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE63A950247E008700815061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE63A952247E008700815061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPGZC3NCFH;
+				INFOPLIST_FILE = TaipeiZoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = finnmore.TaipeiZoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaipeiZoo/TaipeiZoo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE63A953247E008700815061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPGZC3NCFH;
+				INFOPLIST_FILE = TaipeiZoo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = finnmore.TaipeiZoo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaipeiZoo/TaipeiZoo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE63A955247E008700815061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPGZC3NCFH;
+				INFOPLIST_FILE = TaipeiZooTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = finnmore.TaipeiZooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaipeiZoo.app/TaipeiZoo";
+			};
+			name = Debug;
+		};
+		CE63A956247E008700815061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPGZC3NCFH;
+				INFOPLIST_FILE = TaipeiZooTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = finnmore.TaipeiZooTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaipeiZoo.app/TaipeiZoo";
+			};
+			name = Release;
+		};
+		CE63A958247E008700815061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPGZC3NCFH;
+				INFOPLIST_FILE = TaipeiZooUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = finnmore.TaipeiZooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaipeiZoo;
+			};
+			name = Debug;
+		};
+		CE63A959247E008700815061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NPGZC3NCFH;
+				INFOPLIST_FILE = TaipeiZooUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = finnmore.TaipeiZooUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaipeiZoo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE63A91F247E008200815061 /* Build configuration list for PBXProject "TaipeiZoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE63A94F247E008700815061 /* Debug */,
+				CE63A950247E008700815061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE63A951247E008700815061 /* Build configuration list for PBXNativeTarget "TaipeiZoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE63A952247E008700815061 /* Debug */,
+				CE63A953247E008700815061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE63A954247E008700815061 /* Build configuration list for PBXNativeTarget "TaipeiZooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE63A955247E008700815061 /* Debug */,
+				CE63A956247E008700815061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE63A957247E008700815061 /* Build configuration list for PBXNativeTarget "TaipeiZooUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE63A958247E008700815061 /* Debug */,
+				CE63A959247E008700815061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE63A930247E008200815061 /* TaipeiZoo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE63A931247E008200815061 /* TaipeiZoo.xcdatamodel */,
+			);
+			currentVersion = CE63A931247E008200815061 /* TaipeiZoo.xcdatamodel */;
+			path = TaipeiZoo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE63A91C247E008200815061 /* Project object */;
+}

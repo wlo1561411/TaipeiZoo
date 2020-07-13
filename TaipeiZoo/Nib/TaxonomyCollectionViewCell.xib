@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="taxonomyCell" id="fmX-ZM-GEV" customClass="TaxonomyCollectionViewCell" customModule="TaipeiZoo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="toP-NW-inV">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMj-cV-CIm">
+                        <rect key="frame" x="17" y="15" width="319" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5M-AU-man">
+                        <rect key="frame" x="17" y="41" width="319" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFZ-Vq-Yuq">
+                        <rect key="frame" x="17" y="67" width="319" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwy-G8-iJb">
+                        <rect key="frame" x="17" y="93" width="319" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vwy-G8-iJb" firstAttribute="leading" secondItem="toP-NW-inV" secondAttribute="leading" constant="17" id="3C9-8s-hrL"/>
+                    <constraint firstItem="UMj-cV-CIm" firstAttribute="top" secondItem="toP-NW-inV" secondAttribute="top" constant="15" id="JBZ-ko-aIf"/>
+                    <constraint firstAttribute="bottom" secondItem="vwy-G8-iJb" secondAttribute="bottom" constant="15" id="L0G-0f-dJg"/>
+                    <constraint firstItem="FFZ-Vq-Yuq" firstAttribute="top" secondItem="T5M-AU-man" secondAttribute="bottom" constant="8" id="MdL-SL-GhV"/>
+                    <constraint firstItem="T5M-AU-man" firstAttribute="leading" secondItem="toP-NW-inV" secondAttribute="leading" constant="17" id="Onk-Hr-ofm"/>
+                    <constraint firstItem="UMj-cV-CIm" firstAttribute="leading" secondItem="toP-NW-inV" secondAttribute="leading" constant="17" id="Quk-q0-2OK"/>
+                    <constraint firstItem="T5M-AU-man" firstAttribute="top" secondItem="UMj-cV-CIm" secondAttribute="bottom" constant="8" id="Wyh-Sv-7Y2"/>
+                    <constraint firstAttribute="trailing" secondItem="T5M-AU-man" secondAttribute="trailing" constant="17" id="Yja-C0-3xa"/>
+                    <constraint firstItem="FFZ-Vq-Yuq" firstAttribute="leading" secondItem="toP-NW-inV" secondAttribute="leading" constant="17" id="ZcD-xh-Mu3"/>
+                    <constraint firstAttribute="trailing" secondItem="FFZ-Vq-Yuq" secondAttribute="trailing" constant="17" id="cnT-eS-34n"/>
+                    <constraint firstItem="vwy-G8-iJb" firstAttribute="top" secondItem="FFZ-Vq-Yuq" secondAttribute="bottom" constant="8" id="hI2-Lt-U7u"/>
+                    <constraint firstAttribute="trailing" secondItem="UMj-cV-CIm" secondAttribute="trailing" constant="17" id="wXc-IR-JB4"/>
+                    <constraint firstAttribute="trailing" secondItem="vwy-G8-iJb" secondAttribute="trailing" constant="17" id="xMa-Dr-gr1"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="L0G-0f-dJg"/>
+                    </mask>
+                </variation>
+            </collectionViewCellContentView>
+            <size key="customSize" width="353" height="139"/>
+            <connections>
+                <outletCollection property="taxonomyLabels" destination="UMj-cV-CIm" collectionClass="NSMutableArray" id="8v2-2n-mu4"/>
+                <outletCollection property="taxonomyLabels" destination="T5M-AU-man" collectionClass="NSMutableArray" id="JA0-Rr-KIM"/>
+                <outletCollection property="taxonomyLabels" destination="FFZ-Vq-Yuq" collectionClass="NSMutableArray" id="dl6-Tl-6AB"/>
+                <outletCollection property="taxonomyLabels" destination="vwy-G8-iJb" collectionClass="NSMutableArray" id="EBx-H4-ew3"/>
+            </connections>
+            <point key="canvasLocation" x="221.01449275362322" y="121.20535714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
